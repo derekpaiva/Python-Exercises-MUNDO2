@@ -9,7 +9,7 @@ jokenpon = ["Pedra", "Papel", "Tesoura"] # Criei uma lista com os elementos do j
 
 sleep(2)
 
-escolha_pessoa = str(input('Pedra, Papel ou Tesoura? ')) 
+escolha_pessoa = str(input('Pedra, Papel ou Tesoura? '))
 
 escolha_pc = random.choice(jokenpon) # A função que o computaor "escolhe" um dos elementos
 
@@ -21,15 +21,24 @@ elif escolha_pc == "Pedra":
         print('Você escolheu {} e eu escolhi {} \nVocê venceu! Parabéns!'.format(escolha_pessoa, escolha_pc))
     elif escolha_pessoa == "Tesoura":
         print('Você escolheu {} e eu escolhi {} \nVocê perdeu!'.format(escolha_pessoa, escolha_pc))
+    else:
+        print('JOGADA INVÁLIDA')
 
 elif escolha_pc == "Papel":
     if escolha_pessoa == "Pedra":
         print('Você escolheu {} e eu escolhi {} \nVocê perdeu!'.format(escolha_pessoa, escolha_pc))
     elif escolha_pessoa == "Tesoura":
         print('Você escolheu {} e eu escolhi {} \nVocê venceu! Parabéns!'.format(escolha_pessoa, escolha_pc))
+    else:
+        print('JOGADA INVÁLIDA')
 
 elif escolha_pc == "Tesoura":
     if escolha_pessoa == "Pedra":
         print('Você escolheu {} e eu escolhi {} \nVocê venceu! Parabéns!'.format(escolha_pessoa, escolha_pc))
     elif escolha_pessoa == "Papel":
         print('Você escolheu {} e eu escolhi {} \nVocê perdeu!'.format(escolha_pessoa, escolha_pc))
+    else:
+        print('JOGADA INVÁLIDA')
+        
+else:
+    print('JOGADA INVÁLIDA')
