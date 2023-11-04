@@ -5,13 +5,13 @@ print('-==-' *20)
 print('Vamos jogar JOKENPÔ?')
 print('-==-' *20)
 
-jokenpon = ["Pedra", "Papel", "Tesoura"]
+jokenpon = ["Pedra", "Papel", "Tesoura"] # Criei uma lista com os elementos do jogo
 
 sleep(2)
 
-escolha_pessoa = str(input('Pedra, Papel ou Tesoura? '))
+escolha_pessoa = str(input('Pedra, Papel ou Tesoura? ')) 
 
-escolha_pc = random.choice(jokenpon)
+escolha_pc = random.choice(jokenpon) # A função que o computaor "escolhe" um dos elementos
 
 if escolha_pc == escolha_pessoa:
     print('Você escolheu {} e eu escolhi {} \nHouve empate!'.format(escolha_pessoa, escolha_pc))
